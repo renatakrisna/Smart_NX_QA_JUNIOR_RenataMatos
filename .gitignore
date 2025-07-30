@@ -1,0 +1,67 @@
+# Dependências do Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de build e dist
+dist/
+build/
+
+# Arquivos de configuração local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cypress - Arquivos gerados durante execução
+cypress/screenshots/
+cypress/videos/
+cypress/results/
+cypress/reports/
+cypress/downloads/
+
+# Arquivos de log
+*.log
+logs/
+
+# Cache do sistema
+.cache/
+.tmp/
+
+# Arquivos do sistema operacional
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Arquivos de backup
+*.backup
+*.bak
+
+# Arquivos específicos do projeto
+cypress.env.json
+mochawesome-report/
+
+# Arquivos de configuração sensíveis (se houver)
+config/local.json
+secrets.json
