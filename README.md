@@ -12,7 +12,7 @@ Este projeto contém testes automatizados desenvolvidos em Cypress para o sistem
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/[seu-usuario]/Smart_NX_QA_JUNIOR_RenataMatos.git
+git clone https://github.com/renatakrisna/Smart_NX_QA_JUNIOR_RenataMatos.git
 cd Smart_NX_QA_JUNIOR_RenataMatos
 ```
 
