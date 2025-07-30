@@ -40,12 +40,11 @@ npm install cypress --save-dev
 │   │       └── pesquisa_pim.cy.js
 │   ├── fixtures/
 │   │   └── example.json
-│   ├── support/
-│   │   ├── commands.js
-│   │   └── e2e.js
-│   │     
-│   └── videos/
-│   └── screenshots/
+│   └── support/
+│      ├── commands.js
+│      └── e2e.js
+│        
+│    screenshots/
 ├── cypress.config.js
 ├── package.json
 └── README.md
