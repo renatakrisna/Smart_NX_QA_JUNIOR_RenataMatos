@@ -1,0 +1,58 @@
+Feature: Cenários para a Gravação de Áudio
+#Estes cenários se concentram na funcionalidade de gravação em si, seguindo os critérios de aceitação.
+
+Teste 1: Início da Gravação e Exibição de Indicadores
+
+  Cenário: O operador inicia a gravação do áudio
+    Dado que o ícone de microfone é exibido na tela de atendimento
+    Quando o operador clica no botão de gravação
+    Então o indicador de tempo decorrido deve ser exibido
+    E a gravação deve ser iniciada
+
+
+Teste 2: Exigência de Permissão para Acesso ao Microfone
+
+  Cenário: O sistema solicita permissão para usar o microfone
+    Dado que o operador está em um atendimento
+    E que a permissão para usar o microfone ainda não foi concedida
+    Quando o operador clica no botão de gravação
+    Então o sistema deve exibir uma solicitação de permissão para o microfone
+
+
+Feature: Cenários para Pré-visualização e Ações do Áudio
+#Estes cenários abordam as ações que o operador pode tomar após a gravação, como pré-visualizar, enviar, regravar ou cancelar.
+
+Teste 3: Pré-visualização e Opções de Ação após a Gravação
+
+  Cenário: O operador pode pré-visualizar o áudio e escolher uma ação
+    Dado que o operador finalizou a gravação de um áudio
+    Quando o áudio for finalizado
+    Então o operador deve visualizar um botão para ouvir o áudio
+    E deve visualizar as opções "Enviar", "Regravar" e "Cancelar"
+
+
+Teste 4: Envio do Áudio Gravado com Sucesso
+
+  Cenário: O operador envia o áudio com sucesso
+    Dado que um áudio foi gravado e pré-visualizado pelo operador
+    Quando o operador clica no botão "Enviar"
+    Então o áudio deve ser enviado ao cliente
+    E o áudio enviado deve ser exibido na conversa
+
+
+Teste 5: Regravação do Áudio
+
+  Cenário: O operador opta por regravar o áudio
+    Dado que um áudio foi gravado e pré-visualizado
+    Quando o operador clica no botão "Regravar"
+    Então a gravação anterior deve ser descartada
+    E o sistema deve iniciar uma nova gravação
+
+Teste 6: Cancelamento da Gravação
+
+    Cenário: O operador cancela a gravação do áudio
+      Dado que o operador está pré-visualizando um áudio
+      Quando o operador clica no botão "Cancelar"
+      Então o áudio gravado deve ser descartado
+      E os botões de ação devem desaparecer da tela
+
