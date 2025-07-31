@@ -11,8 +11,6 @@
 describe('Testes no Módulo PIM - OrangeHRM', () => {
 
   beforeEach(() => {
-    // Acessa o site e faz o login antes de cada teste
-    cy.visit('/web/index.php/auth/login');
     cy.login(); // Executa o login de forma reutilizável
   });
 

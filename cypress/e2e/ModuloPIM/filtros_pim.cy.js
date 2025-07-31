@@ -12,7 +12,7 @@ describe('Testes de Filtros Employee - Módulo PIM', () => {
 
     beforeEach(() => {
         cy.login();
-        cy.visit('/web/index.php/pim/viewEmployeeList');
+        cy.get('.oxd-main-menu-item').contains('PIM').click();
     });
 
     /**

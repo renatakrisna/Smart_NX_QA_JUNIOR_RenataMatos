@@ -11,7 +11,7 @@ describe('Testes de Filtros Employee - Módulo PIM', () => {
 
     beforeEach(() => {
         cy.login();
-        cy.visit('/web/index.php/pim/viewEmployeeList');
+        cy.get('.oxd-main-menu-item').contains('PIM').click();
     });
 
     /**
@@ -57,8 +57,8 @@ describe('Testes de Filtros Employee - Módulo PIM', () => {
         cy.get('.oxd-table-row').should('contain.text', 'Carlos Oliveira');
         cy.get('.oxd-icon.bi-trash').click();
         cy.get('.oxd-button--label-danger').click();
-        cy.get('.oxd-toast').should('be.visible').and('contain.text', 'Successfully Deleted'); // Valida o toast de sucesso      
-        cy.get('button[type="submit"]').click();// Faz nova pesquisa com o mesmo nome       
+        cy.get('.oxd-toast').should('be.visible').and('contain.text', 'Successfully Deleted');      
+        cy.get('button[type="submit"]').click();      
         cy.get('.oxd-toast-content').should('contain.text', 'No Records Found'); // Valida que excluiu
     });
 

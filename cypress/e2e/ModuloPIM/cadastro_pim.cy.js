@@ -12,7 +12,6 @@
 describe('Cadastro de Employees - Módulo PIM', () => {
 
     beforeEach(() => {
-        cy.visit('/web/index.php/auth/login');
         cy.login();
         cy.get('.oxd-main-menu-item').contains('PIM').click(); // Acessa o módulo PIM
     });
